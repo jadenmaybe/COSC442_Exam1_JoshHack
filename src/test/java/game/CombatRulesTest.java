@@ -25,7 +25,8 @@ public class CombatRulesTest {
     // and isDead returns a correct boolean value
     @ParameterizedTest
     @CsvSource({
-            "1, 100, -1, 0", // 1 damage, should return 0. Below boundary
+            "1, 100, -5, -4", // 5 damage, should return -4. Below boundary
+            "1, 100, -1, 0", // 1 damage, should return 0. 1 below boundary
             "1, 100, 0, 1", // 0 damage, should return 1. 1 above the lower boundary
             "98, 100, 1, 99", // 1 healing, should return 99, 1 below the upper boundary
             "99, 100, 1, 100", // 1 healing, healing to max, should return max
