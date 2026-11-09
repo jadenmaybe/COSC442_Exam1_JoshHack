@@ -61,6 +61,22 @@ public class CreatureTest {
         assertEquals(expected, CombatRules.isDead(creature.hp()));
     }
 
+    @ParameterizedTest
+    @CsvSource({
+            "-101, ouch, true", // dies, corpse is left
+            "-100, ouch, true", // take 100 damage, health should be 0, corpse should be left
+            "-99, ouch, false", // minimum health boundary, should still be alive, no corpse
+            "1, none, false", // 1 healing, health should be 100, no corpse
+            "-5, hit, false", // non-fatal damage, no corpse
+    })
+    void testModifyHp_IfDead_CheckForCorpse(int amount, String causeOfDeath, boolean expectedDead) {
+        // Arrange
+        creature.modifyHp(amount, causeOfDeath);
+        // Act, assert
+        assertEquals(expectedDead, world.item(creature.x, creature.y, creature.z) != null);
+
+    }
+
     @Test
     void testArmor() {
 

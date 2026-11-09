@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="game.InventoryTest" time="0.176" tests="11" errors="0" skipped="0" failures="0" flakes="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="game.InventoryTest" time="0.028" tests="11" errors="0" skipped="0" failures="0" flakes="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Projects\Project 4\JoshHack\JoshHack\target\test-classes;C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Projects\Project 4\JoshHack\JoshHack\target\classes;C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Projects\Project 4\JoshHack\JoshHack\libs\asciiPanel.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter\5.14.1\junit-jupiter-5.14.1.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.14.1\junit-jupiter-api-5.14.1.jar;C:\Users\cotca\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\cotca\.m2\repository\org\junit\platform\junit-platform-commons\1.14.1\junit-platform-commons-1.14.1.jar;C:\Users\cotca\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.14.1\junit-jupiter-params-5.14.1.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.14.1\junit-jupiter-engine-5.14.1.jar;C:\Users\cotca\.m2\repository\org\junit\platform\junit-platform-engine\1.14.1\junit-platform-engine-1.14.1.jar"/>
+    <property name="java.class.path" value="C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Exams\Exam1\Exam1_JoshHack\target\test-classes;C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Exams\Exam1\Exam1_JoshHack\target\classes;C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Exams\Exam1\Exam1_JoshHack\libs\asciiPanel.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter\5.14.1\junit-jupiter-5.14.1.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.14.1\junit-jupiter-api-5.14.1.jar;C:\Users\cotca\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\cotca\.m2\repository\org\junit\platform\junit-platform-commons\1.14.1\junit-platform-commons-1.14.1.jar;C:\Users\cotca\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.14.1\junit-jupiter-params-5.14.1.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.14.1\junit-jupiter-engine-5.14.1.jar;C:\Users\cotca\.m2\repository\org\junit\platform\junit-platform-engine\1.14.1\junit-platform-engine-1.14.1.jar"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -14,9 +14,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.15.6-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\cotca\AppData\Local\Temp\surefire2561791223402275304\surefirebooter-20261104154157069_3.jar C:\Users\cotca\AppData\Local\Temp\surefire2561791223402275304 2026-11-04T15-41-56_647-jvmRun1 surefire-20261104154157069_1tmp surefire_0-20261104154157069_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\cotca\AppData\Local\Temp\surefire14683494479004667560\surefirebooter-20261108195236521_3.jar C:\Users\cotca\AppData\Local\Temp\surefire14683494479004667560 2026-11-08T19-52-36_080-jvmRun1 surefire-20261108195236521_1tmp surefire_0-20261108195236521_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Projects\Project 4\JoshHack\JoshHack\target\test-classes;C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Projects\Project 4\JoshHack\JoshHack\target\classes;C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Projects\Project 4\JoshHack\JoshHack\libs\asciiPanel.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter\5.14.1\junit-jupiter-5.14.1.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.14.1\junit-jupiter-api-5.14.1.jar;C:\Users\cotca\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\cotca\.m2\repository\org\junit\platform\junit-platform-commons\1.14.1\junit-platform-commons-1.14.1.jar;C:\Users\cotca\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.14.1\junit-jupiter-params-5.14.1.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.14.1\junit-jupiter-engine-5.14.1.jar;C:\Users\cotca\.m2\repository\org\junit\platform\junit-platform-engine\1.14.1\junit-platform-engine-1.14.1.jar"/>
+    <property name="surefire.test.class.path" value="C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Exams\Exam1\Exam1_JoshHack\target\test-classes;C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Exams\Exam1\Exam1_JoshHack\target\classes;C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Exams\Exam1\Exam1_JoshHack\libs\asciiPanel.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter\5.14.1\junit-jupiter-5.14.1.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.14.1\junit-jupiter-api-5.14.1.jar;C:\Users\cotca\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\cotca\.m2\repository\org\junit\platform\junit-platform-commons\1.14.1\junit-platform-commons-1.14.1.jar;C:\Users\cotca\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.14.1\junit-jupiter-params-5.14.1.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.14.1\junit-jupiter-engine-5.14.1.jar;C:\Users\cotca\.m2\repository\org\junit\platform\junit-platform-engine\1.14.1\junit-platform-engine-1.14.1.jar"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\cotca"/>
     <property name="user.language" value="en"/>
@@ -24,12 +24,12 @@
     <property name="java.version.date" value="2025-04-15"/>
     <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.15.6-hotspot"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Projects\Project 4\JoshHack\JoshHack"/>
+    <property name="basedir" value="C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Exams\Exam1\Exam1_JoshHack"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\cotca\AppData\Local\Temp\surefire2561791223402275304\surefirebooter-20261104154157069_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\cotca\AppData\Local\Temp\surefire14683494479004667560\surefirebooter-20261108195236521_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.15+6"/>
@@ -44,7 +44,7 @@
     <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
     <property name="java.io.tmpdir" value="C:\Users\cotca\AppData\Local\Temp\"/>
     <property name="java.version" value="17.0.15"/>
-    <property name="user.dir" value="C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Projects\Project 4\JoshHack\JoshHack"/>
+    <property name="user.dir" value="C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Exams\Exam1\Exam1_JoshHack"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -57,14 +57,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testIsFull_Empty" classname="game.InventoryTest" time="0.09"/>
-  <testcase name="testContains_False" classname="game.InventoryTest" time="0.004"/>
-  <testcase name="testAdd_FullInventory" classname="game.InventoryTest" time="0.003"/>
-  <testcase name="testIsFull_NotFull" classname="game.InventoryTest" time="0.001"/>
-  <testcase name="testIsFull_True" classname="game.InventoryTest" time="0.001"/>
-  <testcase name="testAdd_Item" classname="game.InventoryTest" time="0.004"/>
-  <testcase name="testRemove_NonExistentItem" classname="game.InventoryTest" time="0.004"/>
-  <testcase name="testContains_True" classname="game.InventoryTest" time="0.002"/>
+  <testcase name="testIsFull_Empty" classname="game.InventoryTest" time="0.004"/>
+  <testcase name="testContains_False" classname="game.InventoryTest" time="0.001"/>
+  <testcase name="testAdd_FullInventory" classname="game.InventoryTest" time="0.002"/>
+  <testcase name="testIsFull_NotFull" classname="game.InventoryTest" time="0.002"/>
+  <testcase name="testIsFull_True" classname="game.InventoryTest" time="0.002"/>
+  <testcase name="testAdd_Item" classname="game.InventoryTest" time="0.002"/>
+  <testcase name="testRemove_NonExistentItem" classname="game.InventoryTest" time="0.003"/>
+  <testcase name="testContains_True" classname="game.InventoryTest" time="0.001"/>
   <testcase name="testRemove_ExistingItem" classname="game.InventoryTest" time="0.001"/>
   <testcase name="testAdd_TilFull" classname="game.InventoryTest" time="0.001"/>
   <testcase name="testGet_ItemAtIndex" classname="game.InventoryTest" time="0.002"/>

@@ -33,7 +33,7 @@ public class CombatRulesTest {
             "100, 100, 0, 100", // At max boundary
             "100, 100, 5, 100", // 5 healing, should return 100 (max). Shouldn't go above max boundary
     })
-    void testCalculateNewHp_AndIsDead(int currentHp, int maxHp, int amount, int expected) {
+    void testCalculateNewHp(int currentHp, int maxHp, int amount, int expected) {
         // Act
         int newHp = CombatRules.calculateNewHp(currentHp, maxHp, amount);
         // Assert
