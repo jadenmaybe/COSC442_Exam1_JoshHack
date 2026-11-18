@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="game.CreatureTest" time="0.319" tests="88" errors="0" skipped="0" failures="0" flakes="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="game.CreatureTest" time="0.334" tests="88" errors="0" skipped="0" failures="0" flakes="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.15.6-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\cotca\AppData\Local\Temp\surefire11512749185081082634\surefirebooter-20261117134751398_3.jar C:\Users\cotca\AppData\Local\Temp\surefire11512749185081082634 2026-11-17T13-47-51_071-jvmRun1 surefire-20261117134751398_1tmp surefire_0-20261117134751398_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\cotca\AppData\Local\Temp\surefire6437990688738259534\surefirebooter-20261117211132947_3.jar C:\Users\cotca\AppData\Local\Temp\surefire6437990688738259534 2026-11-17T21-11-32_604-jvmRun1 surefire-20261117211132947_1tmp surefire_0-20261117211132947_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Exams\Exam1\Exam1_JoshHack\target\test-classes;C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Exams\Exam1\Exam1_JoshHack\target\classes;C:\Users\cotca\School\Y5\COSC442 Software Quality Assurance\Exams\Exam1\Exam1_JoshHack\libs\asciiPanel.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter\5.14.1\junit-jupiter-5.14.1.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.14.1\junit-jupiter-api-5.14.1.jar;C:\Users\cotca\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\cotca\.m2\repository\org\junit\platform\junit-platform-commons\1.14.1\junit-platform-commons-1.14.1.jar;C:\Users\cotca\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.14.1\junit-jupiter-params-5.14.1.jar;C:\Users\cotca\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.14.1\junit-jupiter-engine-5.14.1.jar;C:\Users\cotca\.m2\repository\org\junit\platform\junit-platform-engine\1.14.1\junit-platform-engine-1.14.1.jar"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -29,7 +29,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\cotca\AppData\Local\Temp\surefire11512749185081082634\surefirebooter-20261117134751398_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\cotca\AppData\Local\Temp\surefire6437990688738259534\surefirebooter-20261117211132947_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.15+6"/>
@@ -57,62 +57,62 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="equip_armorUpdatesDefenseValueAndArmorSlot" classname="game.CreatureTest" time="0.064"/>
+  <testcase name="equip_armorUpdatesDefenseValueAndArmorSlot" classname="game.CreatureTest" time="0.081"/>
   <testcase name="dig_changesWallToFloorAndConsumesFood" classname="game.CreatureTest" time="0.002"/>
-  <testcase name="constructor_initializesCoreState" classname="game.CreatureTest" time="0.006"/>
-  <testcase name="quaffingEquippedItemClearsItsEquipmentSlot" classname="game.CreatureTest" time="0.004"/>
-  <testcase name="item_returnsWorldItemWhenVisibleAndNullWhenHidden" classname="game.CreatureTest" time="0.004"/>
+  <testcase name="constructor_initializesCoreState" classname="game.CreatureTest" time="0.005"/>
+  <testcase name="quaffingEquippedItemClearsItsEquipmentSlot" classname="game.CreatureTest" time="0.003"/>
+  <testcase name="item_returnsWorldItemWhenVisibleAndNullWhenHidden" classname="game.CreatureTest" time="0.003"/>
   <testcase name="learnName_changesUnknownItemAppearanceToKnownName" classname="game.CreatureTest" time="0.002"/>
   <testcase name="moveBy_movesToGroundAndConsumesFood" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="doAction_includesCreaturesAtVisionRadiusButNotBeyondIt" classname="game.CreatureTest" time="0.005"/>
-  <testcase name="regenerationModifiersAffectNextHealthAndManaUpdate" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="castSpell_withoutTargetLeavesManaAndEffectsUnchanged" classname="game.CreatureTest" time="0.003"/>
+  <testcase name="doAction_includesCreaturesAtVisionRadiusButNotBeyondIt" classname="game.CreatureTest" time="0.003"/>
+  <testcase name="regenerationModifiersAffectNextHealthAndManaUpdate" classname="game.CreatureTest" time="0.002"/>
+  <testcase name="castSpell_withoutTargetLeavesManaAndEffectsUnchanged" classname="game.CreatureTest" time="0.004"/>
   <testcase name="moveBy_stairDirectionsAllowValidTransitions" classname="game.CreatureTest" time="0.002"/>
   <testcase name="summon_addsCreatureToWorld" classname="game.CreatureTest" time="0.002"/>
-  <testcase name="update_doesNotRegenerateFullResources" classname="game.CreatureTest" time="0.002"/>
+  <testcase name="update_doesNotRegenerateFullResources" classname="game.CreatureTest" time="0.001"/>
   <testcase name="modifyFood_starvesPlayerWhenFoodReachesZero" classname="game.CreatureTest" time="0.002"/>
-  <testcase name="equip_fullInventoryRejectsExternalItem" classname="game.CreatureTest" time="0.006"/>
+  <testcase name="equip_fullInventoryRejectsExternalItem" classname="game.CreatureTest" time="0.008"/>
   <testcase name="throwItem_notifiesActorWhenNoCreatureIsHit" classname="game.CreatureTest" time="0.002"/>
-  <testcase name="foodAndManaModifiers_updateMaximums" classname="game.CreatureTest" time="0.002"/>
+  <testcase name="foodAndManaModifiers_updateMaximums" classname="game.CreatureTest" time="0.001"/>
   <testcase name="hiddenLocationsUseAiRememberedTileAndHideCreatures" classname="game.CreatureTest" time="0.002"/>
   <testcase name="doAction_notifiesVisibleObserverWithExactSecondPersonMessage(String, String)[1]" classname="game.CreatureTest" time="0.002"/>
-  <testcase name="doAction_notifiesVisibleObserverWithExactSecondPersonMessage(String, String)[2]" classname="game.CreatureTest" time="0.003"/>
+  <testcase name="doAction_notifiesVisibleObserverWithExactSecondPersonMessage(String, String)[2]" classname="game.CreatureTest" time="0.002"/>
   <testcase name="modifyXp_reportsExactDirection(int, String)[1]" classname="game.CreatureTest" time="0.002"/>
-  <testcase name="modifyXp_reportsExactDirection(int, String)[2]" classname="game.CreatureTest" time="0.002"/>
-  <testcase name="pickup_movesWorldItemIntoInventory" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="modifyMana_clampsBetweenZeroAndMaximum(int, int)[1]" classname="game.CreatureTest" time="0.001"/>
+  <testcase name="modifyXp_reportsExactDirection(int, String)[2]" classname="game.CreatureTest" time="0.001"/>
+  <testcase name="pickup_movesWorldItemIntoInventory" classname="game.CreatureTest" time="0.002"/>
+  <testcase name="modifyMana_clampsBetweenZeroAndMaximum(int, int)[1]" classname="game.CreatureTest" time="0.003"/>
   <testcase name="modifyMana_clampsBetweenZeroAndMaximum(int, int)[2]" classname="game.CreatureTest" time="0.002"/>
-  <testcase name="modifyMana_clampsBetweenZeroAndMaximum(int, int)[3]" classname="game.CreatureTest" time="0.001"/>
+  <testcase name="modifyMana_clampsBetweenZeroAndMaximum(int, int)[3]" classname="game.CreatureTest" time="0.002"/>
   <testcase name="pickup_withoutItemLeavesInventoryUnchanged" classname="game.CreatureTest" time="0.001"/>
   <testcase name="meleeAttack_damagesTargetWithinExpectedRange" classname="game.CreatureTest" time="0.003"/>
-  <testcase name="throwItem_consumesPotionWhenItHitsCreature" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="castSpell_requiresManaAndTarget" classname="game.CreatureTest" time="0.001"/>
+  <testcase name="throwItem_consumesPotionWhenItHitsCreature" classname="game.CreatureTest" time="0.002"/>
+  <testcase name="castSpell_requiresManaAndTarget" classname="game.CreatureTest" time="0.002"/>
   <testcase name="equip_weaponUpdatesAttackValueAndWeaponSlot" classname="game.CreatureTest" time="0.001"/>
   <testcase name="castSpell_allowsCostExactlyEqualToCurrentMana" classname="game.CreatureTest" time="0.001"/>
   <testcase name="throwItem_placesPotionWhenItMissesCreature" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="equip_replacesExistingWeaponAndArmor" classname="game.CreatureTest" time="0.002"/>
+  <testcase name="equip_replacesExistingWeaponAndArmor" classname="game.CreatureTest" time="0.001"/>
   <testcase name="rangedWeaponAttack_usesHalfBaseAttackPlusRangedValue" classname="game.CreatureTest" time="0.004"/>
   <testcase name="rangedWeaponAttack_usesEquippedRangedWeapon" classname="game.CreatureTest" time="0.002"/>
-  <testcase name="drop_whenNoSpaceLeavesItemInInventoryAndNotifies" classname="game.CreatureTest" time="0.001"/>
+  <testcase name="drop_whenNoSpaceLeavesItemInInventoryAndNotifies" classname="game.CreatureTest" time="0.002"/>
   <testcase name="modifyHp_handlesHealthAndDeathBoundaries(int, String, int, boolean)[1]" classname="game.CreatureTest" time="0.003"/>
   <testcase name="modifyHp_handlesHealthAndDeathBoundaries(int, String, int, boolean)[2]" classname="game.CreatureTest" time="0.002"/>
-  <testcase name="modifyHp_handlesHealthAndDeathBoundaries(int, String, int, boolean)[3]" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="modifyHp_handlesHealthAndDeathBoundaries(int, String, int, boolean)[4]" classname="game.CreatureTest" time="0.002"/>
+  <testcase name="modifyHp_handlesHealthAndDeathBoundaries(int, String, int, boolean)[3]" classname="game.CreatureTest" time="0.002"/>
+  <testcase name="modifyHp_handlesHealthAndDeathBoundaries(int, String, int, boolean)[4]" classname="game.CreatureTest" time="0.001"/>
   <testcase name="consume_reportsGrossOnlyForNegativeFood(int, boolean)[1]" classname="game.CreatureTest" time="0.002"/>
   <testcase name="consume_reportsGrossOnlyForNegativeFood(int, boolean)[2]" classname="game.CreatureTest" time="0.001"/>
   <testcase name="meleeAttack_withGreaterDefenseDealsMinimumDamage" classname="game.CreatureTest" time="0.003"/>
   <testcase name="isPlayer_dependsOnGlyph" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="details_reportsCurrentLevelCombatAndHealth" classname="game.CreatureTest" time="0.001"/>
+  <testcase name="details_reportsCurrentLevelCombatAndHealth" classname="game.CreatureTest" time="0.0"/>
   <testcase name="foodOverflowRaisesMaximumAndDamagesCreature" classname="game.CreatureTest" time="0.001"/>
   <testcase name="combatValues_includeBothEquippedItems" classname="game.CreatureTest" time="0.001"/>
   <testcase name="equip_replacesExistingArmorAndReportsBothActions" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="update_regeneratesHealthAndManaWhenBelowMaximum" classname="game.CreatureTest" time="0.001"/>
+  <testcase name="update_regeneratesHealthAndManaWhenBelowMaximum" classname="game.CreatureTest" time="0.002"/>
   <testcase name="visibility_respectsRadiusAndDetection" classname="game.CreatureTest" time="0.002"/>
   <testcase name="moveBy_zeroDeltaDoesNothing" classname="game.CreatureTest" time="0.001"/>
   <testcase name="canEnter_requiresGroundAndEmptyLocation" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="accessors_reportCurrentState" classname="game.CreatureTest" time="0.002"/>
-  <testcase name="consume_withoutEffectDoesNotAddActiveEffect" classname="game.CreatureTest" time="0.002"/>
-  <testcase name="realTile_readsWorldTileWhileTileUsesAiMemoryWhenHidden" classname="game.CreatureTest" time="0.001"/>
+  <testcase name="accessors_reportCurrentState" classname="game.CreatureTest" time="0.001"/>
+  <testcase name="consume_withoutEffectDoesNotAddActiveEffect" classname="game.CreatureTest" time="0.001"/>
+  <testcase name="realTile_readsWorldTileWhileTileUsesAiMemoryWhenHidden" classname="game.CreatureTest" time="0.0"/>
   <testcase name="throwItem_placesNonPotionItemAtLastVisibleLocation" classname="game.CreatureTest" time="0.001"/>
   <testcase name="drop_equippedItemClearsWeaponSlot" classname="game.CreatureTest" time="0.001"/>
   <testcase name="modifyHp_onDeathRemovesCreatureAndLeavesCorpse" classname="game.CreatureTest" time="0.001"/>
@@ -120,29 +120,29 @@
   <testcase name="modifyFood_atMaximumDoesNotTriggerOvereating" classname="game.CreatureTest" time="0.001"/>
   <testcase name="drop_movesInventoryItemIntoWorld" classname="game.CreatureTest" time="0.001"/>
   <testcase name="modifyHp_recordsCauseOfDeath" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="gainXp_increasesExperienceForDefeatedCreature" classname="game.CreatureTest" time="0.016"/>
+  <testcase name="gainXp_increasesExperienceForDefeatedCreature" classname="game.CreatureTest" time="0.007"/>
   <testcase name="throwItem_unequipsEquippedItemWhenPlaced" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="equip_classifiesItemByAttackAndDefense(int, int, boolean)[1]" classname="game.CreatureTest" time="0.002"/>
+  <testcase name="equip_classifiesItemByAttackAndDefense(int, int, boolean)[1]" classname="game.CreatureTest" time="0.001"/>
   <testcase name="equip_classifiesItemByAttackAndDefense(int, int, boolean)[2]" classname="game.CreatureTest" time="0.001"/>
   <testcase name="doAction_withItemDoesNothingForDeadCreature" classname="game.CreatureTest" time="0.002"/>
-  <testcase name="modifyXp_appliesLevelUpHealthIncrease" classname="game.CreatureTest" time="0.0"/>
+  <testcase name="modifyXp_appliesLevelUpHealthIncrease" classname="game.CreatureTest" time="0.001"/>
   <testcase name="update_expiresCompletedEffectsAndCallsAi" classname="game.CreatureTest" time="0.001"/>
   <testcase name="moveBy_doesNotMoveIntoWall" classname="game.CreatureTest" time="0.002"/>
-  <testcase name="eat_consumesFoodAndRemovesItem" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="equip_externalItemAddsItToInventoryAndWorldItemIsRemoved" classname="game.CreatureTest" time="0.001"/>
+  <testcase name="eat_consumesFoodAndRemovesItem" classname="game.CreatureTest" time="0.002"/>
+  <testcase name="equip_externalItemAddsItToInventoryAndWorldItemIsRemoved" classname="game.CreatureTest" time="0.002"/>
   <testcase name="setCreatureAi_replacesAiUsedByNotifications" classname="game.CreatureTest" time="0.001"/>
   <testcase name="doAction_notifiesActorWithExactMessage(String, String)[1]" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="doAction_notifiesActorWithExactMessage(String, String)[2]" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="unequip_nonPositiveHealthClearsItemWithoutNotification(int)[1]" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="unequip_nonPositiveHealthClearsItemWithoutNotification(int)[2]" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="modifyFood_doesNotStarveNonPlayerAtZero" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="doAction_withItemNotifiesAndTeachesName" classname="game.CreatureTest" time="0.0"/>
+  <testcase name="doAction_notifiesActorWithExactMessage(String, String)[2]" classname="game.CreatureTest" time="0.002"/>
+  <testcase name="unequip_nonPositiveHealthClearsItemWithoutNotification(int)[1]" classname="game.CreatureTest" time="0.002"/>
+  <testcase name="unequip_nonPositiveHealthClearsItemWithoutNotification(int)[2]" classname="game.CreatureTest" time="0.002"/>
+  <testcase name="modifyFood_doesNotStarveNonPlayerAtZero" classname="game.CreatureTest" time="0.002"/>
+  <testcase name="doAction_withItemNotifiesAndTeachesName" classname="game.CreatureTest" time="0.001"/>
   <testcase name="modifyXp_reportsGainAndAdvancesOnlyAboveThreshold" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="throwItem_placesNonPotionWhenItHitsCreature" classname="game.CreatureTest" time="0.002"/>
+  <testcase name="throwItem_placesNonPotionWhenItHitsCreature" classname="game.CreatureTest" time="0.001"/>
   <testcase name="modifyMaxHpAndStats_changeReportedValues" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="meleeAttack_defeatingTargetAwardsExperience" classname="game.CreatureTest" time="0.002"/>
-  <testcase name="unequip_clearsEquippedItem" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="moveBy_invalidStairDirectionDoesNotConsumeFoodOrMove(int, String)[1]" classname="game.CreatureTest" time="0.001"/>
-  <testcase name="moveBy_invalidStairDirectionDoesNotConsumeFoodOrMove(int, String)[2]" classname="game.CreatureTest" time="0.001"/>
+  <testcase name="meleeAttack_defeatingTargetAwardsExperience" classname="game.CreatureTest" time="0.003"/>
+  <testcase name="unequip_clearsEquippedItem" classname="game.CreatureTest" time="0.002"/>
+  <testcase name="moveBy_invalidStairDirectionDoesNotConsumeFoodOrMove(int, String)[1]" classname="game.CreatureTest" time="0.002"/>
+  <testcase name="moveBy_invalidStairDirectionDoesNotConsumeFoodOrMove(int, String)[2]" classname="game.CreatureTest" time="0.002"/>
   <testcase name="quaff_startsEffectAndAddsItToActiveEffects" classname="game.CreatureTest" time="0.001"/>
 </testsuite>
