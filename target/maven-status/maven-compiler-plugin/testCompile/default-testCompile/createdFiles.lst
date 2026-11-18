@@ -1,1 +1,9 @@
 game\InventoryTest.class
+game\ItemTest.class
+game\StuffFactoryTest$StubRandom.class
+game\CreatureTest.class
+game\StuffFactoryTest.class
+game\CreatureTest$RecordingAi.class
+game\CreatureTest$1.class
+game\CombatRulesTest.class
+game\CreatureTest$HiddenAi.class

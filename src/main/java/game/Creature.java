@@ -4,6 +4,8 @@ import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 public class Creature {
 	private World world;
 
@@ -25,6 +27,7 @@ public class Creature {
 
 	private CreatureAi ai;
 
+	@SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification = "Creature retains its active AI collaborator.")
 	public void setCreatureAi(CreatureAi ai) {
 		this.ai = ai;
 	}
@@ -87,6 +90,7 @@ public class Creature {
 
 	private Inventory inventory;
 
+	@SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "Inventory identity and mutation are part of the game model.")
 	public Inventory inventory() {
 		return inventory;
 	}
@@ -105,12 +109,14 @@ public class Creature {
 
 	private Item weapon;
 
+	@SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "Equipment identity is required for inventory and combat state.")
 	public Item weapon() {
 		return weapon;
 	}
 
 	private Item armor;
 
+	@SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "Equipment identity is required for inventory and combat state.")
 	public Item armor() {
 		return armor;
 	}
@@ -149,6 +155,7 @@ public class Creature {
 
 	private List<Effect> effects;
 
+	@SuppressFBWarnings(value = "EI_EXPOSE_REP", justification = "Active effects are maintained as shared game state.")
 	public List<Effect> effects() {
 		return effects;
 	}
@@ -186,6 +193,7 @@ public class Creature {
 		return causeOfDeath;
 	}
 
+	@SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification = "Creature methods require the shared world instance.")
 	public Creature(World world, char glyph, Color color, String name, int maxHp, int attack, int defense) {
 		this.world = world;
 		this.glyph = glyph;
@@ -536,6 +544,7 @@ public class Creature {
 		}
 	}
 
+	@SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification = "Equipped items must retain identity with inventory items.")
 	public void equip(Item item) {
 		if (!inventory.contains(item)) {
 			if (inventory.isFull()) {
