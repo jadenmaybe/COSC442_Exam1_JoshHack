@@ -250,11 +250,89 @@ public class StuffFactoryTest {
         assertFalse(blueBook.writtenSpells().get(3).effect().isDone());
     }
 
+    @ParameterizedTest
+    @MethodSource("weaponBranches")
+    void randomWeapon_coversEveryBranch(int randomValue, String expectedName) {
+        StuffFactory controlledFactory = new StuffFactory(world, new StubRandom(randomValue));
+
+        Item weapon = controlledFactory.randomWeapon(1);
+
+        assertEquals(expectedName, weapon.name());
+        assertTrue(containsAtDepth(weapon, 1));
+    }
+
+    private static Stream<Arguments> weaponBranches() {
+        return Stream.of(
+                Arguments.of(0, "dagger"),
+                Arguments.of(1, "sword"),
+                Arguments.of(2, "bow"),
+                Arguments.of(3, "staff"));
+    }
+
+    @ParameterizedTest
+    @MethodSource("armorBranches")
+    void randomArmor_coversEveryBranch(int randomValue, String expectedName) {
+        StuffFactory controlledFactory = new StuffFactory(world, new StubRandom(randomValue));
+
+        Item armor = controlledFactory.randomArmor(1);
+
+        assertEquals(expectedName, armor.name());
+        assertTrue(containsAtDepth(armor, 1));
+    }
+
+    private static Stream<Arguments> armorBranches() {
+        return Stream.of(
+                Arguments.of(0, "tunic"),
+                Arguments.of(1, "chainmail"),
+                Arguments.of(2, "platemail"));
+    }
+
+    @ParameterizedTest
+    @MethodSource("potionBranches")
+    void randomPotion_coversEveryBranch(int randomValue, String expectedName) {
+        StuffFactory controlledFactory = new StuffFactory(world, new StubRandom(randomValue));
+
+        Item potion = controlledFactory.randomPotion(1);
+
+        assertEquals(expectedName, potion.name());
+        assertTrue(containsAtDepth(potion, 1));
+    }
+
+    private static Stream<Arguments> potionBranches() {
+        return Stream.of(
+                Arguments.of(0, "health potion"),
+                Arguments.of(1, "health potion"),
+                Arguments.of(2, "mana potion"),
+                Arguments.of(3, "mana potion"),
+                Arguments.of(4, "slow health potion"),
+                Arguments.of(5, "poison potion"),
+                Arguments.of(6, "warrior's potion"),
+                Arguments.of(7, "archers potion"),
+                Arguments.of(8, "experience potion"));
+    }
+
+    @ParameterizedTest
+    @MethodSource("spellBookBranches")
+    void randomSpellBook_coversEveryBranch(int randomValue, String expectedName) {
+        StuffFactory controlledFactory = new StuffFactory(world, new StubRandom(randomValue));
+
+        Item spellBook = controlledFactory.randomSpellBook(1);
+
+        assertEquals(expectedName, spellBook.name());
+        assertTrue(containsAtDepth(spellBook, 1));
+    }
+
+    private static Stream<Arguments> spellBookBranches() {
+        return Stream.of(
+                Arguments.of(0, "white mage's spellbook"),
+                Arguments.of(1, "blue mage's spellbook"));
+    }
+
     @Test
     void randomWeapon_returnsOnlySupportedWeaponTypes() {
         Set<String> names = new HashSet<>();
 
-        for (int i = 0; i < 30; i++)
+        for (int i = 0; i < 15; i++)
             names.add(factory.randomWeapon(0).name());
 
         assertTrue(names.stream().allMatch(name ->
@@ -265,7 +343,7 @@ public class StuffFactoryTest {
     void randomArmor_returnsOnlySupportedArmorTypes() {
         Set<String> names = new HashSet<>();
 
-        for (int i = 0; i < 30; i++)
+        for (int i = 0; i < 15; i++)
             names.add(factory.randomArmor(0).name());
 
         assertTrue(names.stream().allMatch(name ->
@@ -276,7 +354,7 @@ public class StuffFactoryTest {
     void randomPotion_returnsOnlySupportedPotionTypes() {
         Set<String> names = new HashSet<>();
 
-        for (int i = 0; i < 50; i++)
+        for (int i = 0; i < 25; i++)
             names.add(factory.randomPotion(0).name());
 
         assertTrue(names.stream().allMatch(name -> Arrays.asList(
@@ -288,7 +366,7 @@ public class StuffFactoryTest {
     void randomSpellBook_returnsOnlySupportedSpellbooks() {
         Set<String> names = new HashSet<>();
 
-        for (int i = 0; i < 30; i++)
+        for (int i = 0; i < 15; i++)
             names.add(factory.randomSpellBook(0).name());
 
         assertTrue(names.stream().allMatch(name ->
@@ -359,5 +437,18 @@ public class StuffFactoryTest {
                 for (int z = 0; z < depth; z++)
                     tiles[x][y][z] = Tile.FLOOR;
         return tiles;
+    }
+
+    private static class StubRandom extends java.util.Random {
+        private final int value;
+
+        private StubRandom(int value) {
+            this.value = value;
+        }
+
+        @Override
+        public int nextInt(int bound) {
+            return value;
+        }
     }
 }

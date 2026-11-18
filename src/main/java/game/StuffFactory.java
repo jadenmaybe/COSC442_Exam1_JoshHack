@@ -6,17 +6,24 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 
 import asciiPanel.AsciiPanel;
 
 public class StuffFactory {
 	private World world;
+	private Random random;
 	private Map<String, Color> potionColors;
 	private List<String> potionAppearances;
 	
 	public StuffFactory(World world){
+		this(world, new Random());
+	}
+
+	StuffFactory(World world, Random random){
 		this.world = world;
+		this.random = random;
 		
 		setUpPotionAppearances();
 	}
@@ -164,7 +171,7 @@ public class StuffFactory {
 	}
 	
 	public Item randomWeapon(int depth){
-		switch ((int)(Math.random() * 3)){
+		switch (random.nextInt(4)){
 		case 0: return newDagger(depth);
 		case 1: return newSword(depth);
 		case 2: return newBow(depth);
@@ -173,7 +180,7 @@ public class StuffFactory {
 	}
 
 	public Item randomArmor(int depth){
-		switch ((int)(Math.random() * 3)){
+		switch (random.nextInt(3)){
 		case 0: return newLightArmor(depth);
 		case 1: return newMediumArmor(depth);
 		default: return newHeavyArmor(depth);
@@ -303,7 +310,7 @@ public class StuffFactory {
 	}
 	
 	public Item randomPotion(int depth){
-		switch ((int)(Math.random() * 9)){
+		switch (random.nextInt(9)){
 		case 0: return newPotionOfHealth(depth);
 		case 1: return newPotionOfHealth(depth);
 		case 2: return newPotionOfMana(depth);
@@ -356,7 +363,7 @@ public class StuffFactory {
 			}
 			public void update(Creature creature){
 				super.update(creature);
-				if (Math.random() < 0.25)
+				if (random.nextDouble() < 0.25)
 					creature.modifyHp(1, "Killed by inner strength spell?");
 			}
 			public void end(Creature creature){
@@ -392,8 +399,8 @@ public class StuffFactory {
 				
 				do
 				{
-					mx = (int)(Math.random() * 11) - 5;
-					my = (int)(Math.random() * 11) - 5;
+					mx = random.nextInt(11) - 5;
+					my = random.nextInt(11) - 5;
 				}
 				while (!creature.canEnter(creature.x+mx, creature.y+my, creature.z)
 						&& creature.canSee(creature.x+mx, creature.y+my, creature.z));
@@ -446,7 +453,7 @@ public class StuffFactory {
 	
 
 	public Item randomSpellBook(int depth){
-		switch ((int)(Math.random() * 2)){
+		switch (random.nextInt(2)){
 		case 0: return newWhiteMagesSpellbook(depth);
 		default: return newBlueMagesSpellbook(depth);
 		}
