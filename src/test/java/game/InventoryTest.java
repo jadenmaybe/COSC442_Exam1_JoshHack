@@ -108,6 +108,19 @@ public class InventoryTest {
     }
 
     @Test
+    void testAdd_ReusesSlotAfterRemoval() {
+        // Arrange
+        inventory.add(dummyItem1);
+        inventory.remove(dummyItem1);
+
+        // Act
+        inventory.add(dummyItem2);
+
+        // Assert
+        assertEquals(dummyItem2, inventory.get(0));
+    }
+
+    @Test
     void testIsFull_Empty() {
         // Act & Assert
         assertFalse(inventory.isFull());
